@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: yellow;
+}
+h1{
+    text-align: center;
+}
+
+a{
+    display: inline-block;
+width: 100%;
+color: brown;
+font-size: 30px;
+text-align: center;
+font-weight: bold;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin:10px 0px
+}
+.box1:hover{
+    width: 300px;
+    transition: 2s;
+    transition-timing-function: ease-in;
+}
+.box2:hover{
+    width: 250px;
+    height: 300px;
+    transition: width 2s, height 3s;
+}
+.box3:hover{
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    width: 250px;
+}
+.box4:hover{
+    transition-timing-function: linear;
+    width: 250px;
+    transition: 2s;
+}
+.box5:hover{
+    transition-timing-function: ease;
+    width: 250px;
+    transition-duration: 2s;
+}
+.box6:hover{
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0, 1, 0.2, 1);
+    width: 250px;
+}
+.box7:hover{
+    transition-duration: 3s;
+    width: 250px;
+
+}

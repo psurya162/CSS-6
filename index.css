@@ -1,0 +1,168 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: yellow;
+    }
+    .row .number{
+       align-self: flex-end;
+       font-weight: 900;
+    }
+    a{
+        display: inline-block;
+    width: 100%;
+    color: brown;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    }
+    h1{
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    .colordark{
+        background-color: blue;
+    }
+    .colorgrey{
+        background-color: grey;
+    }
+    .colorlgrey{
+        background-color: lightgreen;
+    }
+   .Row-container{
+        width: 100%;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 10px;
+   }
+   .row{
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+   }
+   .box{
+    width: 100px;
+    height: 100px;
+   }
+   @keyframes Skew {
+    0% {
+        transform: skew(-20deg);
+    }
+
+    50% {
+        transform: skew(20deg);
+    }
+
+    100% {
+        transform: skew(-20deg);
+    }
+}
+@keyframes SkewY {
+    0% {
+        transform: skewY(-20deg);
+    }
+
+    50% {
+        transform: skewY(20deg);
+    }
+
+    100% {
+        transform: skewY(-20deg);
+    }
+}
+
+@keyframes RotationAnimation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ScaleYAnimation {
+    0% {
+        transform: scaley(0.5);
+    }
+
+    50% {
+        transform: scaley(1);
+    }
+
+    100% {
+        transform: scaley(0.5);
+    }
+}
+
+@keyframes ScaleXAnimation {
+    0% {
+        transform: scalex(0.5);
+    }
+
+    50% {
+        transform: scalex(1);
+    }
+
+    100% {
+        transform: scalex(0.5);
+    }
+}
+
+@keyframes Rotate {
+    0% {
+        transform: rotate(100deg);
+    }
+    
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(100deg);
+    }
+}
+   .skew {
+    animation-name: Skew;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.skewrev {
+    animation-name: SkewY;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.rotate {
+    animation-name: Rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.scaley {
+    animation: ScaleYAnimation infinite 3s ease;
+}
+
+.scalex {
+    animation: ScaleXAnimation infinite 3s ease;
+}
+.colorgreen {
+    background-color: green;
+    animation-name: Rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.colorbrown{
+    background-color: brown;
+}
+.colorsdark{
+    background-color: aquamarine;
+}
